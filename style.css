@@ -382,5 +382,40 @@ nav ul li a {
     display: flex;
     gap: 30%;
     padding: 15px 13px;
+    text-align: center;
+}
+
+.service-head {
+    color: var(--default-color);
+    padding: 40px 55px;
+}
+
+.service-head h1::before {
+    position: absolute;
+    content: '';
+    width: 5%;
+    height: 6px;
+    background: var(--tertiary-color);
+    margin: -20px 0;
+}
+
+.btn3{
+    background: transparent;
+    border: none;
+}
+
+.btn3 a{
+    color: var(--primary-color);
+}
+
+.service-content{
+    color: var(--default-color);
+}
+
+.service-container{
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px 70px;
+  gap: 70px;
   text-align: center;
 }
