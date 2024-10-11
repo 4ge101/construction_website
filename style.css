@@ -277,3 +277,50 @@ nav ul li a {
     overflow: visible;
     list-style-type: circle;
 }
+
+.image-container {
+    padding: 50px 50px;
+}
+
+.image-container img {
+    border-radius: 15px;
+    padding: 4px 4px;
+}
+
+.image-title {
+    color: var(--default-color);
+    width: 45%;
+    position: absolute;
+    right: 110px;
+}
+
+@media (max-width: 700px) {
+    .card-head1 {
+        width: 300px;
+        height: 200px;
+    }
+
+    .card-head2 img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .head-card {
+        padding: 0 50px 80px;
+    }
+
+    .head {
+        padding: 66px 15px;
+        width: 95%;
+        gap: 25px;
+        position: relative;
+    }
+
+    .head h1 {
+        font-size: 20px;
+    }
+
+    .head span {
+        font-size: 15px;
+    }
+}
