@@ -203,7 +203,7 @@ nav ul li a {
 
 .head {
     padding: 80px 50px;
-    width: 38%;
+    width: 50%;
     display: grid;
     gap: 40px;
     color: var(--default-color);
@@ -373,6 +373,20 @@ nav ul li a {
 
 .image-box2 img:nth-child(2) {
     width: 18%;
+}
+
+.featured-head {
+    color: var(--default-color);
+    padding: 50px 50px;
+}
+
+.featured-head::before{
+    position: absolute;
+    content: '';
+    width: 5%;
+    height: 6px;
+    background: var(--tertiary-color);
+    margin: -20px 0;
 }
 
 @media (max-width: 700px) {
