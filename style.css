@@ -301,6 +301,80 @@ nav ul li a {
     gap: 15px;
 }
 
+.facilitie-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    text-align: center;
+}
+
+.facilitie-container h3 {
+    padding: 5px 0 10px;
+}
+
+.award-container {
+    color: var(--tertiary-color);
+    display: flex;
+    gap: 30%;
+    padding: 15px 13px;
+    text-align: center;
+}
+
+.service-head {
+    color: var(--default-color);
+    padding: 40px 55px;
+}
+
+.service-head h1::before {
+    position: absolute;
+    content: '';
+    width: 5%;
+    height: 6px;
+    background: var(--tertiary-color);
+    margin: -20px 0;
+}
+
+.btn3 {
+    background: transparent;
+    border: none;
+}
+
+.btn3 a {
+    color: var(--primary-color);
+}
+
+.service-content {
+    color: var(--default-color);
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px 70px;
+    gap: 70px;
+    text-align: center;
+}
+
+.service-content p {
+    padding: 15px 0;
+}
+
+.image-box1 img:nth-child(1) {
+    width: 20%
+}
+
+.image-box1 img:nth-child(2) {
+    width: 16%
+}
+
+.image-box2 img:nth-child(1) {
+    width: 25%;
+}
+
+.image-box2 img:nth-child(2) {
+    width: 18%;
+}
+
 @media (max-width: 700px) {
     main {
         overflow: visible;
@@ -364,58 +438,28 @@ nav ul li a {
         position: relative;
         left: 70px;
     }
-}
+    .image-container {
+        padding: 50px 35px;
+      }
+    .image-box1 img:nth-child(1) {
+        width: 44%
+    }
+    
+    .image-box1 img:nth-child(2) {
+        width: 39%
+    }
+    
+    .image-box2 img:nth-child(1) {
+        width: 40%;
+    }
+    
+    .image-box2 img:nth-child(2) {
+        width: 45%;
+    }
 
-.facilitie-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    text-align: center;
-}
-
-.facilitie-container h3 {
-    padding: 5px 0 10px;
-}
-
-.award-container {
-    color: var(--tertiary-color);
-    display: flex;
-    gap: 30%;
-    padding: 15px 13px;
-    text-align: center;
-}
-
-.service-head {
-    color: var(--default-color);
-    padding: 40px 55px;
-}
-
-.service-head h1::before {
-    position: absolute;
-    content: '';
-    width: 5%;
-    height: 6px;
-    background: var(--tertiary-color);
-    margin: -20px 0;
-}
-
-.btn3{
-    background: transparent;
-    border: none;
-}
-
-.btn3 a{
-    color: var(--primary-color);
-}
-
-.service-content{
-    color: var(--default-color);
-}
-
-.service-container{
-    display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 0px 70px;
-  gap: 70px;
-  text-align: center;
+    .image-title{
+        position: relative;
+        right: 0;
+        width: auto;
+    }
 }
