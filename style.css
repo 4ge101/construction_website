@@ -296,7 +296,7 @@ nav ul li a {
     color: var(--default-color);
     width: 45%;
     position: absolute;
-    right: 110px;
+    right: 80px;
     display: grid;
     gap: 15px;
 }
@@ -438,28 +438,48 @@ nav ul li a {
         position: relative;
         left: 70px;
     }
+
     .image-container {
         padding: 50px 35px;
-      }
+    }
+
     .image-box1 img:nth-child(1) {
         width: 44%
     }
-    
+
     .image-box1 img:nth-child(2) {
         width: 39%
     }
-    
+
     .image-box2 img:nth-child(1) {
         width: 40%;
     }
-    
+
     .image-box2 img:nth-child(2) {
         width: 45%;
     }
 
-    .image-title{
+    .image-title {
         position: relative;
         right: 0;
         width: auto;
+    }
+
+    .facilitie-container {
+        padding: 50px 0;
+    }
+
+    .service-head h1::before {
+        width: 12%;
+    }
+
+    .service-head {
+        display: grid;
+        gap: 10px;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 }
