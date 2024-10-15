@@ -401,9 +401,13 @@ nav ul li a {
     gap: 20px;
     max-width: 1200px;
     width: 100%;
-    padding: 0 100px;
+    padding: 0 180px 50px;
 }
 
+/* .bento-box img:hover,
+.main-bento img:hover{
+    position: absolute;
+} */
 
 .main-bento {
     grid-area: main-bento;
@@ -523,6 +527,36 @@ nav ul li a {
     border: 2px solid var(--bento-color);
     width: 40%;
     border-radius: 20px;
+}
+
+.construction-container {
+    padding: 70px 0;
+}
+
+.construction-head {
+    color: white;
+    padding: 50px 50px;
+    display: grid;
+    gap: 10px;
+}
+
+.construction-head::before {
+    position: absolute;
+    content: '';
+    width: 5%;
+    height: 6px;
+    background: var(--tertiary-color);
+    margin: -20px 0;
+}
+
+.construction-btn {
+    display: flex;
+    gap: 20px;
+    padding: 0 50px;
+}
+
+.construction-btn .btn2 a {
+    color: var(--default-color);
 }
 
 @media (max-width: 700px) {
