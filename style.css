@@ -534,7 +534,7 @@ nav ul li a {
 }
 
 .construction-head {
-    color: white;
+    color: var(--default-color);
     padding: 50px 50px;
     display: grid;
     gap: 10px;
@@ -557,6 +557,136 @@ nav ul li a {
 
 .construction-btn .btn2 a {
     color: var(--default-color);
+}
+
+.footer {
+    background-color: var(--bento-color);
+    margin: 80px 0 0;
+    padding: 45px 0 0;
+}
+
+.footer-container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 20%;
+    padding: 55px 25px;
+}
+
+.footer-col h4 {
+    position: relative;
+    left: 0;
+    font-size: 18px;
+    color: var(--default-color);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 700;
+    position: relative;
+    overflow: visible;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--secondary-color);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--default-color);
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: var(--tertiary-color);
+    padding-left: 8px;
+}
+
+.footer-col .social-link a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--body-color);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--default-color);
+    transition: all 0.5s ease;
+    position: relative;
+    left: 3px;
+}
+
+.footer-col .social-link a:hover {
+    color: var(--tertiary-color);
+    background-color: var(--default-color);
+}
+
+.copy-right {
+    display: flex;
+    justify-content: end;
+    padding: 0 60px;
+    position: relative;
+    bottom: 15px;
+    color: var(--default-color);
+}
+
+.footer-logo {
+    padding: 0 0 10px;
+}
+
+.footer-logo img {
+    width: 50%;
+}
+
+.footer-col2 {
+    width: 25%;
+    color: var(--default-color);
+}
+
+/* responsive */
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+        padding: 15px 50px 0;
+    }
+
+    .copy-right {
+        padding: 0 10px;
+        bottom: 0;
+        text-align: center;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
 }
 
 @media (max-width: 700px) {
