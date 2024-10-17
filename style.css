@@ -62,7 +62,7 @@ nav ul li a {
     }
 
     .nav-toggle {
-        position: fixed;
+        position: absolute;
         top: 20px;
         right: 20px;
         width: 35px;
@@ -570,18 +570,13 @@ nav ul li a {
     margin: auto;
 }
 
-ul {
-    list-style: none;
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
 }
 
 .footer-col {
-    width: 20%;
-    padding: 55px 25px;
+    padding: 50px 50px;
 }
 
 .footer-col h4 {
@@ -664,7 +659,7 @@ ul {
 }
 
 .footer-col2 {
-    width: 25%;
+    width: 34%;
     color: var(--default-color);
 }
 
@@ -795,5 +790,56 @@ ul {
     .service-container {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+
+    .featured-head {
+        padding: 50px 35px;
+    }
+
+    .featured-head::before {
+        width: 15%;
+    }
+
+    .main-bento {
+        width: 95%;
+    }
+
+    .bento-container {
+        padding: 40px 8px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .side-bento .bento-box {
+        position: relative;
+        width: 95%;
+        height: 250px;
+    }
+
+    .bottom-bento .bento-box {
+        background-color: var(--bento-color);
+        width: 95%;
+        height: 200px;
+    }
+
+    .bottom-bento {
+        flex-wrap: wrap;
+    }
+
+    .end-bento {
+        flex-wrap: wrap;
+    }
+
+    .end-bento .bento-box {
+        width: 95%;
+    }
+
+    .team-head::before {
+        width: 15%;
+    }
+
+    .construction-head::before {
+        width: 15%;
     }
 }
