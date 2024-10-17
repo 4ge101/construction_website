@@ -49,6 +49,26 @@ nav ul li a {
     text-decoration: none;
     color: var(--default-color);
     font-size: 16px;
+    position: relative;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+nav ul li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 .hide-on-bigscreen {
@@ -170,6 +190,26 @@ nav ul li a {
         color: #aaa;
         font-weight: 600;
         transition: all 300ms ease-in-out;
+        position: relative;
+    }
+
+    .link a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        background-color: var(--primary-color);
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+    }
+
+    .link a:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
     }
 
     body.activeNav .nav .links .link {
@@ -841,5 +881,9 @@ nav ul li a {
 
     .construction-head::before {
         width: 15%;
+    }
+
+    .featured-img6 {
+        width: 160%;
     }
 }
