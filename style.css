@@ -318,6 +318,10 @@ nav ul li a:hover::before {
     color: var(--black-color);
 }
 
+.btn2 a {
+    color: var(--default-color);
+}
+
 .btn-container li {
     color: var(--default-color);
     padding: 20px 0;
@@ -713,6 +717,101 @@ nav ul li a:hover::before {
     }
 }
 
+.project-head {
+    color: var(--default-color);
+    padding: 100px 50px 50px;
+}
+
+.project-head::before {
+    position: absolute;
+    content: '';
+    width: 5%;
+    height: 6px;
+    background: var(--tertiary-color);
+    margin: -20px 0;
+}
+
+.contact-head {
+    color: var(--default-color);
+    padding: 100px 50px 10px;
+}
+
+.contact-head::before {
+    position: absolute;
+    content: '';
+    width: 5%;
+    height: 6px;
+    background: var(--tertiary-color);
+    margin: -20px 0;
+}
+
+.contact-info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 100px;
+    gap: 80px;
+}
+
+.call-info {
+    color: var(--default-color);
+}
+
+.call-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0 20px;
+}
+
+.call-info ul {
+    padding: 0 40px;
+}
+
+.location-info {
+    color: var(--default-color);
+}
+
+.location-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0 10px;
+}
+
+.location-info ul {
+    padding: 0 40px;
+}
+
+.email-info {
+    color: var(--default-color);
+}
+
+.email-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0 10px;
+}
+
+.email-info ul {
+    padding: 0 40px;
+}
+
+.working-time-info {
+    color: var(--default-color);
+}
+
+.working-time-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0 10px;
+}
+
+.working-time-info ul {
+    padding: 0 40px;
+}
+
 @media(max-width: 574px) {
     .footer-col {
         width: 100%;
@@ -880,5 +979,27 @@ nav ul li a:hover::before {
 
     .featured-img6 {
         width: 160%;
+    }
+
+    .project-head {
+        padding: 50px 30px;
+    }
+
+    .project-head::before {
+        width: 15%;
+    }
+
+    .contact-head::before {
+        width: 15%;
+    }
+
+    .contact-info-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .call-info ul {
+        text-align: start;
     }
 }
